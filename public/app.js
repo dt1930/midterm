@@ -17,7 +17,7 @@ let dataReceived=false;
 let emitted=false;
 let resetButtonCreated=false;
 let startingTime=1; //number of minutes for the game
-let gametime=startingTime*60; //number of seconds for the game
+let gametime=startingTime*30; //number of seconds for the game
 let bodyElement=document.getElementsByTagName('body')[0];
 let info=document.getElementById('info');
 let timer=document.getElementById('timer');
@@ -149,7 +149,7 @@ function draw(){
 }
 socket.on('resetGame',(data)=>{
     console.log("clicked")
-    gametime=60;
+    gametime=30;
     dataReceived=false;
     game = new Game(game_width, game_height, game_ground);
     resetButtonCreated=false;
