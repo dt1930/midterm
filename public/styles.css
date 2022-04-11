@@ -1,0 +1,30 @@
+*{
+    font-family: 'Caveat', cursive;
+    font-family: 'Changa', sans-serif;
+}
+body{
+    background:url('./images/interface.jpg');
+    background-repeat: no-repeat;
+}
+.heading{
+    margin-top:5px;
+    text-align: center;
+    margin-bottom:0px;
+}
+.subheading{
+    margin-top:0px;
+    text-align: center;
+    margin-bottom:400px;
+}
+.form{
+    margin-left:30%;
+}
+.sub-container{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+.info-container{
+    display:none;
+    margin-left:25px;
+}
