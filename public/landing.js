@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     let joinForm = document.getElementById('join-form');
     joinForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+      e.preventDefault(); //preventing the default behavior of the form's submit button
       let name = document.getElementById('name-input').value;
       let room = document.getElementById('room-input').value;
       //save the name and the room in session storage
