@@ -150,9 +150,7 @@ socket.on('capturedFruit',(data)=>{
     }
     io.to(socket.roomNum).emit('capturedFruit',myRoom.capturedFruits)
 })
-</pre>
  2. Socket function that resets the game and emits the information to the front-end
-<pre>
 socket.on('resetGame',(data)=>{
     if (data){
         myRoom.capturedFruits=0;
