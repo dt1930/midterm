@@ -9,11 +9,12 @@ The first thing people usually think of when they hear about multiplayer games i
 ## C. Wireframing the project
 My first wireframes for the landing page and the game page were quite rough. They only contained a form and didn't have any graphics, but after the feedback I received during the user testing, which was to organize my layout so that the login page looks more organized and appealing for the users to play, I changed my game’s wireframing a little bit. Also, since I created the app for the mobile version, it was difficult for me to come up with the layout and decide things such as the position of information about the user, score, room, and timer, but I eventually decided to go with the following wireframes.<br>
 
-<img src="wireframe.png" width="100" height="100/>
+<img src="wireframe.png" width="100" height="100"/>
 
 
 ## D. Writing the html page
 The wireframes of the web page were utilized to write the two html files, namely index.html  and game.html. The former includes a form that takes the input from the player, such as name and the room number, so it includes only basic html tags, such as h1, h4, div, form, and input. that includes all the div elements and input elements required for the web page. The game.html contains div and span tags. Although the structure of both the pages look effortless, I wanted users to just come to the site and without much hassle of navigation just go into the game immediately. However, one important modification I made as a part of the feedback from the usertesting of the game was I created an intermediate page after the landing page where the user would be assigned a role (pluck or drag). I have talked about these modifications under the section feedback and modifications below. Below are my landing page and game page.</br>
+                                             
 ![landingPage](landingPage.png)
 ![gamePage](gamePage.png)
 
