@@ -9,7 +9,7 @@ The first thing people usually think of when they hear about multiplayer games i
 ## C. Wireframing the project
 My first wireframes for the landing page and the game page were quite rough. They only contained a form and didn't have any graphics, but after the feedback I received during the user testing, which was to organize my layout so that the login page looks more organized and appealing for the users to play, I changed my game’s wireframing a little bit. Also, since I created the app for the mobile version, it was difficult for me to come up with the layout and decide things such as the position of information about the user, score, room, and timer, but I eventually decided to go with the following wireframes.<br>
 
-![wireframe](wireframe.png)
+<img src="wireframe.png" width="100" height="100/>
 
 
 ## D. Writing the html page
