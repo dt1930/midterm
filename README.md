@@ -140,7 +140,7 @@ Since the most important part of the second project (and one thing that is uniqu
 </pre>
 ## I. Snippets of code for some important functions on the back end
 
-### 1. Socket function that receives the information about fruit being captured and emits the information to front-end
+1. Socket function that receives the information about fruit being captured and emits the information to front-end
 <pre>
 socket.on('capturedFruit',(data)=>{
     for (let i=0; i<myRoom.fruitsColl.length; i++){
@@ -151,7 +151,7 @@ socket.on('capturedFruit',(data)=>{
     io.to(socket.roomNum).emit('capturedFruit',myRoom.capturedFruits)
 })
 </pre>
-### 2. Socket function that resets the game and emits the information to the front-end
+ 2. Socket function that resets the game and emits the information to the front-end
 <pre>
 socket.on('resetGame',(data)=>{
     if (data){
