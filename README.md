@@ -9,18 +9,18 @@ The first thing people usually think of when they hear about multiplayer games i
 ## C. Wireframing the project
 My first wireframes for the landing page and the game page were quite rough. They only contained a form and didn't have any graphics, but after the feedback I received during the user testing, which was to organize my layout so that the login page looks more organized and appealing for the users to play, I changed my game’s wireframing a little bit. Also, since I created the app for the mobile version, it was difficult for me to come up with the layout and decide things such as the position of information about the user, score, room, and timer, but I eventually decided to go with the following wireframes.<br>
 
-![wireframe](https://dt1930.github.io/midterm/wireframe.png)
+![wireframe](wireframe.png)
 
 
 ## D. Writing the html page
 The wireframes of the web page were utilized to write the two html files, namely index.html  and game.html. The former includes a form that takes the input from the player, such as name and the room number, so it includes only basic html tags, such as h1, h4, div, form, and input. that includes all the div elements and input elements required for the web page. The game.html contains div and span tags. Although the structure of both the pages look effortless, I wanted users to just come to the site and without much hassle of navigation just go into the game immediately. However, one important modification I made as a part of the feedback from the usertesting of the game was I created an intermediate page after the landing page where the user would be assigned a role (pluck or drag). I have talked about these modifications under the section feedback and modifications below. Below are my landing page and game page.</br>
-![landingPage](https://dt1930.github.io/midterm/landingPage.png)
+![landingPage](landingPage.png)
 
 ## E. Writing the style.css
 Writing the CSS is always an important part of the user interface as well as user experience, so I have tried to focus on that part as well with my choice of background, graphics, and fonts. The background of the game was designed in Canva. I have used the google font Caveat  to create a more personal tone. I felt this font suited the overall sense meant to be conveyed by the web page i.e. slightly informal, more connecting (it looks more like someone’s handwriting than the perfect computer-produced text).
 In the main game page, a yellow background is used that contrasts well against the green trees. Although this is a minor detail, I initially had the green mangoes as my fruits, but since the tree itself was green, I decided to go with oranges. For the performance report after the game is over, I thought I went with good color choices, but I have received some comments about what could have been better, which are included in the next steps section of the documentation.<br>
-![gamePage](https://dt1930.github.io/midterm/gamePage.png)
-![scorePage](https://dt1930.github.io/midterm/scorePage.png)
+![gamePage](gamePage.png)
+![scorePage](scorePage.png)
 
 ## F. Front-end javascript (app.js & classes.js)
 My front-end javascript is divided into two separate javascript files as I received the same feedback for my project 1 (to have separate js files as they are big). For this project, I created two separate front-end javascript files. One is app.js that contains mostly the socket connections, emitting, and on functions, including the p5.js functions. Another is classes.js that contains classes for the fruit,the basket, and the whole game itself. I think the division made my job easier in terms of where to look for when I wanted to change a certain thing, including while debugging. The game basically works this way: </br>
