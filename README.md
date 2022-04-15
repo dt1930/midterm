@@ -19,12 +19,8 @@ The wireframes of the web page were utilized to write the two html files, namely
 ## E. Writing the style.css
 Writing the CSS is always an important part of the user interface as well as user experience, so I have tried to focus on that part as well with my choice of background, graphics, and fonts. The background of the game was designed in Canva. I have used the google font Caveat  to create a more personal tone. I felt this font suited the overall sense meant to be conveyed by the web page i.e. slightly informal, more connecting (it looks more like someone’s handwriting than the perfect computer-produced text).
 In the main game page, a yellow background is used that contrasts well against the green trees. Although this is a minor detail, I initially had the green mangoes as my fruits, but since the tree itself was green, I decided to go with oranges. For the performance report after the game is over, I thought I went with good color choices, but I have received some comments about what could have been better, which are included in the next steps section of the documentation.
-
-Before CSS:</br>
-![beforeCSS](https://dt1930.github.io/connections_labs2022/Project1/beforeCSS.png)
-</br>
-After CSS:</br>
-![afterCSS](https://dt1930.github.io/connections_labs2022/Project1/afterCSS.png)
+![gamePage](https://dt1930.github.io/connections_labs2022/Project1/gamePage.png)
+![scorePage](https://dt1930.github.io/connections_labs2022/Project1/scorePage.png)
 
 ## F. Front-end javascript (app.js & classes.js)
 My front-end javascript is divided into two separate javascript files as I received the same feedback for my project 1 (to have separate js files as they are big). For this project, I created two separate front-end javascript files. One is app.js that contains mostly the socket connections, emitting, and on functions, including the p5.js functions. Another is classes.js that contains classes for the fruit,the basket, and the whole game itself. I think the division made my job easier in terms of where to look for when I wanted to change a certain thing, including while debugging. The game basically works this way: </br>
