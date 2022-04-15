@@ -1,4 +1,3 @@
-# midterm
 ### Project 2 Documentation: In Sync
 
 ## A. Description of the project
@@ -124,7 +123,7 @@ socket.on('userLeft',(data)=>{
  
 ## H. Back-end javascript (index.js)
 Since the most important part of the second project (and one thing that is unique to this project from project 1) was the back-end part of the website, I have tried to implement sockets in the best possible way for the real time data exchange. In the back end, I have created a class room that has five attributes, namely roomNum, value (number of people), capturedFruits(score), fruitsColl (array), names(array), and totalFruits(number of total fruits generated). I have described the flow of the game as follows:
-
+<pre>
 User logs into the game by submitting name and room number
 From front-end (session storage), the information about name and room number is sent as an object to back-end
 The back-end checks if the room number exists or not; if not, creates one.
@@ -138,8 +137,9 @@ The back-end emits the information to all the members in the room i.e. both play
 The process continues until the timer goes off
 When the timer goes off, the gameFinished information is emitted to back-end and when it’s received from the back-end, the front-end will display a score report, and on clicking the restart, a new ‘game’ object is created and informed to the back-end so that the room’s attributes are reset, i.e. capturedFruits, fruitsColl, and totalFruits
 If any user disconnects from the game in the middle of the game, the other user will receive an alert. This is implemented from the back-end as one of the socket disconnects, the info is emitted to the members in the room about the user disconnecting. 
-
+</pre>
 ## I. Snippets of code for some important functions on the back end
+<pre>
 Socket function that receives the information about fruit being captured and emits the information to front-end
 
 socket.on('capturedFruit',(data)=>{
@@ -162,32 +162,32 @@ socket.on('resetGame',(data)=>{
     io.to(socket.roomNum).emit('resetGame',true);
 })
 
-
+</pre>
 ## J. Expectations from the user testing
-
+<pre>
 The interface is only designed for mobile devices currently. I opted for mobile devices, so on bigger viewports, the canvas is misplaced and also using a keyboard is not an option. Should I go with the mobile design or make another one for the laptop, including other functionalities of keypressed?
 I am expecting suggestions on UI and UX, and just about whether what I have right now is UX friendly or not. For the UI, I don’t know what I can do to add much to a small game like this, so I am open to suggestions for that also.
 I am using the inbuilt mouseDragged function of p5.js for the user to move the basket here and there. I feel like there is some lag, and it’s not UX friendly. I am thinking of changing it to a slider, so that the y-position of the basket is fixed, and the user can just move it in different x-positions. I am not yet sure what that would look like. Also, my second idea was to just use the mouseClicked and update the position of the basket with mouseX and mouseY every time the function draw() is called. I need suggestions for which one would be better, and if I should not do anything at all provided that there is some lag right now.
 On the front end, I need suggestions on how I can have a better interface for the onboarding and also as the game is in operation.
-
+</pre>
 ## K. Feedback from the user testing on the prototype
-
+<pre>
 The feedback I got from most people was to remove the radio buttons on the landing page that allowed users to select plucking or dragging roles and instead implement the role from the back-end, so that the server assigns the role to the players instead of them selecting the roles. Many of them suggested having an intermediate page so that they know what they have to do.
 I also got feedback about the players not being able to say whether the fruit went into the basket or not as they played the game.
 Another  feedback I received was about improving the graphics of the login page instead of having a plain form.
 The fruits disappeared in the middle of the game and the score was flickering, so I was told to fix these glitches.
 Although this was already in my mind, many suggested having a timer to make the game more interesting. (I hadn’t implemented the timer yet in the prototype.)
 Somebody also suggested that I also allow the basket to be moved by keyboard (in addition to mouse drag) even though the app is meant for mobile because if someone browses from desktop, he/she would probably use the keyboard to move the basket.
-
+</pre>
 ## L. Modifications, debugging, and revisions of code (after user testing)
-
+<pre>
 I removed the radio buttons from the landing page and instead decided to go with the feedback and thus, the game now has the server assigning roles to the players once they join a room. There is an intermediate screen which says what are they required to do, i.e. either click or drag. The internal implementation of how the role is assigned is described in the back-end section of this document.
 I added a background and formatted my landing page so that the login form sits at the right position when browsed from a mobile phone and the graphics look good.
 For the feedback about players not being able to say whether the fruit went into the basket, I used sounds so that the user would know that information. Two different sounds that semantically fit whether the user got the point or not are included in the final version of the game.
 I fixed the glitches related to fruits disappearing in the middle of the game and flickering score.
 I implemented the timer.
 I also allowed the drag user to move the basket with the help of the keyboard in case he/she browsed from the desktop which is very unlikely since this was meant to be a mobile app.
-
+</pre>
 
 
 ## M. Self-evaluation of the final product
