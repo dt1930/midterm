@@ -38,9 +38,9 @@ My front-end javascript is divided into two separate javascript files as I recei
 The classes and methods that have been created in the javascript files (app.js or classes.js) work for following purposes:
 <pre>
 Classes:
-1. Class Fruit : returns a random integer between the min and max values (including min but excluding max)
-2. Class Basket : controls the timer and displays the countdown 
-3. Class game : updates the emoji on the page
+1. Class Fruit 
+2. Class Basket
+3. Class game
 
 Methods:
 1. fruitGenerator(): generates fruit when the frameCount changes by 80 frames every time 
