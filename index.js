@@ -63,6 +63,7 @@ io.sockets.on('connect',(socket)=>{
             console.log(socket.id, "has disconnected");
             myRoom.fruitsColl.splice(0,myRoom.fruitsColl.length);
             myRoom.capturedFruits=0;
+            myRoom.names.splice(0,myRoom.names.length);
         })
         //emitting the basket position to the clients after receving the information from the drag user on client side
         socket.on('basketPosition',(data)=>{
