@@ -18,7 +18,7 @@ The wireframes of the web page were utilized to write the two html files, namely
 
 ## E. Writing the style.css
 Writing the CSS is always an important part of the user interface as well as user experience, so I have tried to focus on that part as well with my choice of background, graphics, and fonts. The background of the game was designed in Canva. I have used the google font Caveat  to create a more personal tone. I felt this font suited the overall sense meant to be conveyed by the web page i.e. slightly informal, more connecting (it looks more like someone’s handwriting than the perfect computer-produced text).
-In the main game page, a yellow background is used that contrasts well against the green trees. Although this is a minor detail, I initially had the green mangoes as my fruits, but since the tree itself was green, I decided to go with oranges. For the performance report after the game is over, I thought I went with good color choices, but I have received some comments about what could have been better, which are included in the next steps section of the documentation.
+In the main game page, a yellow background is used that contrasts well against the green trees. Although this is a minor detail, I initially had the green mangoes as my fruits, but since the tree itself was green, I decided to go with oranges. For the performance report after the game is over, I thought I went with good color choices, but I have received some comments about what could have been better, which are included in the next steps section of the documentation.<br>
 ![gamePage](https://dt1930.github.io/midterm/gamePage.png)
 ![scorePage](https://dt1930.github.io/midterm/scorePage.png)
 
